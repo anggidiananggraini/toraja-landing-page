@@ -1,129 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Experience Tana Toraja</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desa Wisata Kole Sawangan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body { color:#333; line-height:1.6; }
+
+/* HERO */
+.hero {
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('https://jadesta.kemenpar.go.id/imgpost/20170.jpg') center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h1 {
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p {
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn {
+  background:#ff7a00;
+  color:white;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  display:inline-block;
+}
+
+.btn:hover { opacity:0.9; }
+
+/* SECTION */
+section { padding:60px 10%; }
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+
+.card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card h3 {
+  padding:15px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background:#f9f9f9;
+  text-align:center;
+}
+
+/* TESTIMONI */
+.testimoni {
+  background:#111;
+  color:#fff;
+  text-align:center;
+}
+
+.testimoni .card {
+  background:#222;
+  color:#fff;
+}
+
+/* URGENCY */
+.urgency {
+  background:#ffefef;
+  text-align:center;
+  border:2px dashed #ff7a00;
+}
+
+/* FOOTER */
+footer {
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* WA FLOAT */
+.wa {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+</style>
+
 </head>
 
-<body class="font-sans text-gray-800">
+<body>
 
-  <!-- HERO -->
-  <section class="h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('https://images.unsplash.com/photo-1602002418816-5c0aeef426aa');">
-    
-    <div class="text-center bg-black/60 p-8 rounded-xl max-w-2xl">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-        Not Just a Trip.<br> A Once-in-a-Lifetime Experience.
-      </h1>
-      <p class="text-lg mb-6">
-        Discover the hidden beauty of Tana Toraja — where culture, nature, and tradition come alive.
-      </p>
-      <a href="#contact"
-        class="bg-yellow-500 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-600">
-        Book Your Toraja Experience
-      </a>
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Capek Liburan yang Gitu-Gitu Aja?</h1>
+    <p>Di sini kamu nggak cuma liburan… kamu akan MERASAKAN hidup sebagai orang Toraja 🌿</p>
+    <a href="https://wa.me/628XXXXXXXXXX" class="btn">Chat & Booking Sekarang</a>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section>
+  <h2>Kenapa Banyak Orang Kecewa Saat Liburan?</h2>
+  <ul>
+    <li>❌ Tempat terlalu ramai & nggak autentik</li>
+    <li>❌ Cuma foto-foto, nggak dapat pengalaman</li>
+    <li>❌ Terasa “biasa aja”</li>
+  </ul>
+</section>
+
+<!-- SOLUTION -->
+<section class="highlight">
+  <h2>✨ Solusinya: Desa Wisata Kole Sawangan</h2>
+  <p>Hidden gem Toraja yang masih asli, tenang, dan penuh pengalaman budaya.</p>
+
+  <div class="grid" style="margin-top:30px;">
+    <div class="card">
+      <img src="https://img.antarafoto.com/cache/797x1200/2011/12/31/kuburan-batu-425v-dom.webp">
+      <h3>Kuburan Batu Unik</h3>
     </div>
-  </section>
-
-  <!-- STORY -->
-  <section class="py-16 px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold mb-6">Escape the Ordinary</h2>
-    <p class="max-w-3xl mx-auto text-lg">
-      Tired of crowded tourist spots?  
-      Here, you’ll find something different.  
-      A place where time slows down, people greet you with warmth, and every corner tells a story.
-    </p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="bg-gray-100 py-16 px-6 md:px-20">
-    <h2 class="text-3xl font-bold text-center mb-10">What You’ll Experience</h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">🏡 Live in a Tongkonan</h3>
-        <p>Stay in traditional Torajan houses and experience authentic village life.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">🌄 Breathtaking Nature</h3>
-        <p>Wake up to mountain views, fresh air, and landscapes you’ll never forget.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">🎎 Unique Culture</h3>
-        <p>Witness traditions and ceremonies found nowhere else in the world.</p>
-      </div>
-
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/a3/4a/fb/a34afbe765cde33c92b8f4a13f189a07.jpg">
+      <h3>Tinggal di Tongkonan</h3>
     </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="py-16 px-6 md:px-20">
-    <h2 class="text-3xl font-bold text-center mb-10">A Glimpse of Paradise</h2>
-
-    <div class="grid md:grid-cols-3 gap-4">
-      <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6" class="rounded-xl">
-      <img src="https://images.unsplash.com/photo-1583244532610-3e4f2f54f0e8" class="rounded-xl">
-      <img src="https://images.unsplash.com/photo-1577621971164-7c98c8c1dc82" class="rounded-xl">
+    <div class="card">
+      <img src="https://cnc-magazine.oramiland.com/parenting/images/kain-khas-toraja.width-800.jpegquality-80.jpg">
+      <h3>Belajar Tenun</h3>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PACKAGES -->
-  <section class="bg-gray-100 py-16 px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold mb-10">Choose Your Experience</h2>
+<!-- EXPERIENCE -->
+<section>
+  <h2>🔥 Pengalaman yang Kamu Dapat</h2>
+  <ul>
+    <li>✔️ Live in rumah adat (bukan hotel biasa)</li>
+    <li>✔️ Ikut aktivitas warga sehari-hari</li>
+    <li>✔️ Ngopi Toraja langsung dari sumbernya</li>
+    <li>✔️ Trekking alam & budaya</li>
+  </ul>
+</section>
 
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">1 Day Tour</h3>
-        <p class="mb-4">Explore the highlights of Toraja</p>
-        <p class="text-2xl font-bold mb-4">Rp 250K</p>
-      </div>
-
-      <div class="bg-yellow-500 text-white p-6 rounded-xl shadow scale-105">
-        <h3 class="text-xl font-semibold mb-2">2 Days Experience</h3>
-        <p class="mb-4">Stay & immerse in local culture</p>
-        <p class="text-2xl font-bold mb-4">Rp 500K</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Custom Trip</h3>
-        <p class="mb-4">Tailored to your needs</p>
-        <p class="text-2xl font-bold mb-4">Contact Us</p>
-      </div>
-
+<!-- PAKET -->
+<section class="highlight">
+  <h2>🎒 Paket Wisata</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1 Hari Experience</h3>
+      <p style="padding:10px;">Rp150.000</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>2D1N Live In</h3>
+      <p style="padding:10px;">Rp350.000</p>
+    </div>
+    <div class="card">
+      <h3>Full Experience</h3>
+      <p style="padding:10px;">Rp750.000</p>
+    </div>
+  </div>
+</section>
 
-  <!-- TESTIMONIAL -->
-  <section class="py-16 px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold mb-10">What Visitors Say</h2>
+<!-- TESTIMONI -->
+<section class="testimoni">
+  <h2>❤️ Kata Mereka</h2>
+  <div class="grid" style="margin-top:30px;">
+    <div class="card">
+      <p>"Awalnya ragu, tapi ternyata ini pengalaman terbaik!"</p>
+      <strong>- Dinda</strong>
+    </div>
+    <div class="card">
+      <p>"Bener-bener beda dari wisata biasa 😭"</p>
+      <strong>- Anggi</strong>
+    </div>
+    <div class="card">
+      <p>"Serasa pulang ke kampung sendiri."</p>
+      <strong>- Rian</strong>
+    </div>
+  </div>
+</section>
 
-    <p class="max-w-2xl mx-auto italic text-lg">
-      "This was the most unique travel experience I’ve ever had. The people, the culture, everything is unforgettable."
-    </p>
-    <p class="mt-4 font-semibold">— Traveler from Germany</p>
-  </section>
+<!-- URGENCY -->
+<section class="urgency">
+  <h2>⚠️ Slot Terbatas!</h2>
+  <p>Karena ini desa aktif, kunjungan dibatasi setiap minggu.</p>
+  <p><strong>Booking sekarang sebelum penuh!</strong></p>
+</section>
 
-  <!-- CTA -->
-  <section id="contact" class="bg-yellow-500 text-white py-16 text-center">
-    <h2 class="text-3xl font-bold mb-4">Ready to Experience Toraja?</h2>
-    <p class="mb-6">Let’s plan your unforgettable journey today.</p>
+<!-- CTA -->
+<section style="text-align:center;">
+  <h2>Siap Punya Cerita yang Berbeda?</h2>
+  <p>Jangan cuma lihat di Instagram. Rasakan sendiri.</p>
+  <br>
+  <a href="https://wa.me/6282221349377" class="btn">Booking via WhatsApp</a>
+</section>
 
-    <a href="https://wa.me/6281234567890"
-      class="bg-white text-yellow-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100">
-      Book via WhatsApp
-    </a>
-  </section>
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Desa Wisata Kole Sawangan</p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white text-center py-6">
-    <p>© 2026 Experience Tana Toraja</p>
-  </footer>
+<!-- FLOAT WA -->
+<a href="https://wa.me/6282221349377" class="wa">💬 Chat</a>
 
 </body>
 </html>
